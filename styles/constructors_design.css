@@ -1,0 +1,25 @@
+.constructor {
+    padding: 0 2.5% 0 1%;
+    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px #c7c7c7 solid;
+}
+
+.avatar {
+    width: 15%;
+}
+
+.avatar-left {
+    margin: 0 1% 5px 0;
+    float: left;
+}
+
+.avatar-right {
+    margin: 0 0 5px 1%;
+    float: right;
+}
+
+h1 {
+    margin-bottom: 5px;
+}

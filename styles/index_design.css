@@ -1,0 +1,32 @@
+.index_text {
+    width: 70%;
+    align-items: flex-start;
+}
+
+img {
+	float: left;
+    margin: 5px 15px 10px 0;
+    width: 25vw;
+}
+
+.pic {
+    height: fit-content;
+}
+
+.main_div {
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1020px) {
+    img, #pic {
+        width: 100%;
+    }
+
+    .index_text {
+        width: 100%;
+    }
+
+    .main_div {
+        margin: 0 1% 0 1%;
+    }
+}

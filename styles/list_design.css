@@ -1,0 +1,151 @@
+
+.choice_country {
+	display: flex;
+	width: 100%;
+}
+
+#USSR, #Germany {
+	width: 50%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border: 1px solid #c7c7c7;
+	cursor: pointer;
+	filter: grayscale(1);
+	transition: 0.5s ease;
+}
+
+#USSR {
+	background: url("../img/USSR.png") no-repeat;
+	background-size: contain;
+}
+
+#Germany {
+	background: url("../img/Germany.png") no-repeat;
+	background-size: contain;
+	background-position: right;
+}
+
+.plane_list {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+/* #fighters {
+	border: 1px solid #c7c7c7;  //Я так и не понял почему я это написал, ведь оно по факту ничего не делает
+} */
+
+.pics {
+	width: 400px;
+	height: 260px;
+	margin: 25px 2% 0 0;
+	display: none;
+	transition: 0.2s ease;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background-size: cover;
+}
+
+.plane_type {
+	color: #c7c7c7;
+	font-size: x-large;
+	text-shadow: #000 2px 3px 4px;
+}
+
+.active {
+	filter: grayscale(0) !important;
+}
+
+@keyframes fate { /*Для десктопных*/
+	from {
+		height: 105px;
+	  }
+	
+	  to {
+		height: 330px;
+	  }
+}
+
+@keyframes unfate {
+	from {
+		height: 330px;
+	}
+
+	to {
+		height: 105px;
+	}
+}
+
+@keyframes fote { /*Для мобильных*/
+	from {
+		height: 105px;
+	  }
+	
+	  to {
+		height: 952px;
+	  }
+}
+
+@keyframes unfote {
+	from {
+		height: 952px;
+	}
+
+	to {
+		height: 105px;
+	}
+}
+
+@keyframes zoom {
+	from {
+		background-size: auto 100%;
+	}
+	
+	to {
+		background-size: auto 110%;
+	}
+}
+
+@keyframes unzoom {
+	from {
+		background-size: auto 110%;
+	}
+
+	to {
+		background-size: auto 100%;
+	}
+}
+
+@media screen and (min-width: 741px) and (max-width: 1300px) {
+	.plane_type {
+		font-size: 100%;
+	}
+
+	.pics {
+		width: 35%;
+	}
+}
+
+@media screen and (max-width: 740px) {
+	.plane_list {
+		flex-direction: column;
+		display: none;
+		height: 850px;
+	}
+
+	.pics {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	#USSR, #Germany {
+		background: 0;
+	}
+
+	.active {
+		background: #ffffff28;
+	}
+}

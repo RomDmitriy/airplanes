@@ -1,0 +1,12 @@
+#topNubex {
+	position: fixed;
+	right: 5px;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 740px) {
+	#topNubex {
+		right: 15px;
+		bottom: 20px;
+	}
+}
